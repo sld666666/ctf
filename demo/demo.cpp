@@ -5,6 +5,7 @@
 #include "demo.h"
 #include "FrameWndClassInfo.h"
 #include "MessageLoop.h"
+#include "frame/FrameWindowImpl.h"
 
 
 
@@ -21,21 +22,14 @@ int APIENTRY _tWinMain(HINSTANCE hInstance,
                      LPTSTR    lpCmdLine,
                      int       nCmdShow)
 {
-	UNREFERENCED_PARAMETER(hPrevInstance);
-	UNREFERENCED_PARAMETER(lpCmdLine);
 
- 	// TODO: 在此放置代码。
-	
+
 	FrameWndClassInfo().MyRegisterClass(hInstance);
-	// 初始化全局字符串
-	
 
-	// 执行应用程序初始化:
 	if (!InitInstance (hInstance, nCmdShow))
 	{
 		return FALSE;
 	}
-
 	return MessageLoop().run(hInstance);
 }
 

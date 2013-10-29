@@ -241,6 +241,14 @@
 			Name="frame"
 			>
 			<File
+				RelativePath=".\frame\FrameWindowImpl.h"
+				>
+			</File>
+			<File
+				RelativePath=".\frame\FrameWindowImplBase.h"
+				>
+			</File>
+			<File
 				RelativePath=".\frame\FrameWndClassInfo.h"
 				>
 			</File>
