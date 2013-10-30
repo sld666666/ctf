@@ -41,7 +41,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="..\common\ui"
+				AdditionalIncludeDirectories="..\common\ui;..\common"
 				PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
@@ -203,10 +203,6 @@
 			>
 			<File
 				RelativePath=".\demo.h"
-				>
-			</File>
-			<File
-				RelativePath=".\FrameWndClassInfo.h"
 				>
 			</File>
 			<File

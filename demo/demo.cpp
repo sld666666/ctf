@@ -3,8 +3,8 @@
 
 #include "stdafx.h"
 #include "demo.h"
-#include "FrameWndClassInfo.h"
-#include "MessageLoop.h"
+#include "frame/FrameWndClassInfo.h"
+#include "core/MessageLoop.h"
 #include "frame/FrameWindowImpl.h"
 
 
@@ -24,13 +24,13 @@ int APIENTRY _tWinMain(HINSTANCE hInstance,
 {
 
 
-	FrameWndClassInfo().MyRegisterClass(hInstance);
+	FrameWinClassInfo().MyRegisterClass(hInstance);
 
 	if (!InitInstance (hInstance, nCmdShow))
 	{
 		return FALSE;
 	}
-	return MessageLoop().run(hInstance);
+	return core::MessageLoop().run(hInstance);
 }
 
 
